@@ -16,12 +16,9 @@ function fire_ajax_submit() {
         url: "/registration/register-employee",
         data: JSON.stringify(employee),
         success: function (data) {
-
             console.log("SUCCESS : ", data);
-
         },
         error: function (e) {
-
 			alert(e);
 			console.log("ERROR : ", e);
         }
